@@ -1,3 +1,11 @@
+//*********************************************************************
+//// FILE:        Cylinder.cpp 
+//// AUTHOR:      Samuel Piecz
+//// LOGON ID:    Z1732715
+//// DUE DATE:    12/05/17
+////
+//// PURPOSE:     Store logic for the Cylinder Class. 
+////********************************************************************
 #include <iostream>
 #include "Cylinder.h"
 

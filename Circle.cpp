@@ -1,3 +1,11 @@
+//*********************************************************************
+//// FILE:        Circle.cpp 
+//// AUTHOR:      Samuel Piecz
+//// LOGON ID:    Z1732715
+//// DUE DATE:    12/05/17
+////
+//// PURPOSE:     Store logic for the Circle Class. 
+////********************************************************************
 #include <iostream>
 #include <string>
 #include "Circle.h"
