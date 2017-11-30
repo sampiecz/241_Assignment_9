@@ -6,9 +6,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Circle::Circle(string name, int newRadius) : Shape(name)
+Circle::Circle(string newName, int newRadius) : Shape(name)
 {
-    this->name = name;
+    this->name = newName;
     radius = newRadius;
 }
 
