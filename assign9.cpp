@@ -17,11 +17,9 @@ using std::vector;
 
 int main()
 {
-    vector *shapeVector;
+    vector<Shape> v1;
 
-    new Circle();
-    new Cylinder();
-    new Cone();
+    Circle circle1("green circle", 10);
 
     return 0;
 }
