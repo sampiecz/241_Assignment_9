@@ -9,6 +9,10 @@
 #ifndef CYLINDER_H
 #define CYLINDER_H
 
+#include <string>
+
+using std::string;
+
 class Cylinder : public Circle
 {
     public:
