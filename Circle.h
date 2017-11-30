@@ -1,12 +1,12 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-class Circle
+class Circle : public Shape
 {
     public:
         Circle();
         int getRadius();
-        double getArea();
+        virtual double getArea();
         void print();
 
     private:

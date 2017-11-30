@@ -1,12 +1,12 @@
 #ifndef CYLINDER_H
 #define CYLINDER_H
 
-class Cylinder
+class Cylinder : public Circle
 {
     public:
         Cylinder(string, int, int);
         double getArea();
-        double virtual getVolume();
+        virtual double getVolume();
         void print();
 
     private:

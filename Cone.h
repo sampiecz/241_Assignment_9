@@ -1,12 +1,12 @@
 #ifndef CONE_H
 #define CONE_H
 
-class Cone
+class Cone : public Circle
 {
     public:
         String(string, int, int);
         double getArea();
-        double virtual getVolume();
+        virtual double getVolume();
         void print();
 
     private:

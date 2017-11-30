@@ -7,8 +7,8 @@ class Shape
     public:
         Shape(const string&);
         virtual ~Shape();
-        void virtual print();
-        double virtual getArea() {return area};
+        virtual void print();
+        virtual double getArea() const = 0;
 
     private:
         string name;

@@ -6,9 +6,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Circle::Circle(string newName, int newRadius)
+Circle::Circle(string name, int newRadius) : Shape(name)
 {
-    name = newName;
+    this->name = name;
     radius = newRadius;
 }
 
@@ -25,5 +25,5 @@ double Circle::getArea()
 
 void Circle::print()
 {
-    cout << name << ", radius" << radius << ", area " << getArea();
+    cout << Shape::print() << ", radius" << radius << ", area " << getArea();
 }

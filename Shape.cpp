@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-Shape::Shape(const string& otherName)
+Shape::Shape(const string& newName)
 {
     name = otherName;
 }
