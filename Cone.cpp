@@ -7,6 +7,7 @@
 //// PURPOSE:     Store logic for the Cone Class. 
 ////********************************************************************
 #include <math.h>
+#include <iostream>
 #include "Cone.h"
 
 using std::sqrt;

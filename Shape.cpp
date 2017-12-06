@@ -15,14 +15,14 @@ using std::endl;
 
 Shape::Shape(const string& newName)
 {
-    name = otherName;
+    name = newName;
 }
 
-virtual Shape::~Shape()
+Shape::~Shape()
 {
 }
 
-void virtual Shape::print()
+void Shape::print()
 {
     cout << name << endl;
 }

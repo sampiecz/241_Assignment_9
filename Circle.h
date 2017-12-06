@@ -19,7 +19,7 @@ class Circle : public Shape
     public:
         Circle(string, int);
         int getRadius();
-        virtual double getArea();
+        virtual double getArea() const;
         void print();
 
     private:

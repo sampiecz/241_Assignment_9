@@ -14,9 +14,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Circle::Circle(string& newName, int newRadius) : Shape(name)
+Circle::Circle(string newName, int newRadius) : Shape(name)
 {
-    this->name = newName;
+    name = newName;
     radius = newRadius;
 }
 
@@ -25,7 +25,7 @@ int Circle::getRadius()
     return radius;
 }
 
-double Circle::getArea()
+double Circle::getArea() const
 {
    int area = 3.14(radius*radius); 
    return area;
