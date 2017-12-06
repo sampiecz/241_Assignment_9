@@ -9,10 +9,15 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
+#include <string>
+#include "Shape.h"
+
+using std::string;
+
 class Circle : public Shape
 {
     public:
-        Circle();
+        Circle(string, int);
         int getRadius();
         virtual double getArea();
         void print();

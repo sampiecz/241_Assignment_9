@@ -31,10 +31,9 @@ Cylinder.o: Cylinder.cpp Cylinder.h
 Circle.o: Circle.cpp Circle.h
 	g++ $(CCFLAGS) -c Circle.cpp
 
-# May need to add header file dependency
-# something like???
-#
-# Cylinder.h: Shape.h Circle.h
+Circle.h: Shape.h
+Cone.h: Circle.h
+Cylinder.h: Circle.h
 
 # Pseudo-target to remove object code and executable files
 clean:

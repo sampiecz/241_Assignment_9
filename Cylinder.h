@@ -10,6 +10,7 @@
 #define CYLINDER_H
 
 #include <string>
+#include "Circle.h"
 
 using std::string;
 

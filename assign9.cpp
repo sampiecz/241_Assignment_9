@@ -17,9 +17,9 @@ using std::vector;
 
 int main()
 {
-    vector<Shape> v1;
+    vector<Shape *> shapes(4);
 
-    Circle circle1("green circle", 10);
+    shapes[0] = new Circle("green circle", 10);
 
     return 0;
 }
