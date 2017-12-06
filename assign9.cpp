@@ -19,7 +19,7 @@ using namespace std;
 int main()
 {
     // container for those shapes
-    vector<Shape *> shapes(6);
+    vector<Shape *> shapes;
 
     // pack that container
     shapes.push_back(new Circle("green circle", 10));
@@ -30,7 +30,7 @@ int main()
     shapes.push_back(new Circle("orange circle", 5));
     
     // Print all the shapes
-    cout << "Printing all shapes..." << endl;
+    cout << "\n\nPrinting all shapes...\n" << endl;
 
     // print those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
@@ -39,15 +39,18 @@ int main()
     }
     
     // Loop through and print only the cylinders
+    cout << "\nPrinting all cylinders...\n" << endl;
+
     for (unsigned j = 0; j < shapes.size(); ++j)
     {
         Cylinder* cylinderPtr = dynamic_cast<Cylinder*>(shapes[j]);
         if (cylinderPtr != nullptr)
         {
             cylinderPtr->print();
-            cout << endl;
         }
     }
+
+    cout << "\n";
 
     // delete those shapes
     for(unsigned k = 0; k < shapes.size(); k++)
