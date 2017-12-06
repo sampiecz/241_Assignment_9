@@ -17,7 +17,7 @@ class Shape
 {
 
     public:
-        Shape(const string);
+        Shape(const string&);
         virtual ~Shape();
         virtual void print() const;
         virtual double getArea() const = 0;

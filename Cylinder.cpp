@@ -12,11 +12,9 @@
 using std::cout;
 using std::endl;
 
-Cylinder::Cylinder(const string newName, int newRadius, int newHeight) : Circle(name, radius)
+Cylinder::Cylinder(const string& name, int radius, int height) : Circle(name, radius)
 {
-    name = newName;
-    radius = newRadius;
-    height = newHeight;
+    this->height = height;
 }
 
 Cylinder::double getArea() const

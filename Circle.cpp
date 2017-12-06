@@ -14,9 +14,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Circle::Circle(const string newName, int newRadius) : Shape(name)
+Circle::Circle(const string& newName, int newRadius) : Shape(name)
 {
-    name = newName;
+    // name = newName;
     radius = newRadius;
 }
 

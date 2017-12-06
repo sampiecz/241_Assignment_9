@@ -17,7 +17,7 @@ using std::string;
 class Cylinder : public Circle
 {
     public:
-        Cylinder(const string, int, int);
+        Cylinder(const string&, int, int);
         double getArea() const;
         virtual double getVolume() const;
         void print() const;

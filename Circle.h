@@ -17,7 +17,7 @@ using std::string;
 class Circle : public Shape
 {
     public:
-        Circle(const string, int);
+        Circle(const string&, int);
         int getRadius() const;
         virtual double getArea() const;
         void print() const;

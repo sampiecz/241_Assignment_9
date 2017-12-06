@@ -13,16 +13,16 @@
 using std::cout;
 using std::endl;
 
-Shape::Shape(const string newName)
+Shape::Shape(const string& name)
 {
-    name = newName;
+    this->name = name;
 }
 
 Shape::~Shape()
 {
 }
 
-void Shape::print()
+void Shape::print() const
 {
     cout << name << endl;
 }

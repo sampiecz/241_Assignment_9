@@ -17,11 +17,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Cone::Cone(const string newName, int newRadius, int newHeight) : Circle(name, radius)
+Cone::Cone(const string& name, int radius, int height) : Circle(name, radius)
 {
-    name = newName;
-    radius = newRadius;
-    height = newHeight;
+    this->height = height;
 }
 
 double Cone::getArea() const 

@@ -17,7 +17,7 @@ using std::string;
 class Cone : public Circle
 {
     public:
-        Cone(const string, int, int);
+        Cone(const string&, int, int);
         double getArea() const;
         virtual double getVolume() const;
         void print() const;
