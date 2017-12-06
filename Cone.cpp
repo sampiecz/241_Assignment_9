@@ -6,7 +6,8 @@
 ////
 //// PURPOSE:     Store logic for the Cone Class. 
 ////********************************************************************
-#include <math.h>
+#include <cmath>
+#include <ctgmath>
 #include <iostream>
 #include "Cone.h"
 
@@ -14,10 +15,10 @@ using std::sqrt;
 using std::cout;
 using std::endl;
 
-Cone::Cone(string newName, int newRadius, int newHeight) 
+Cone::Cone(string newName, int newRadius, int newHeight) : Circle(name, radius)
 {
-    this->name = newName;
-    this->radius = newRadius;
+    name = newName;
+    radius = newRadius;
     height = newHeight;
 }
 
