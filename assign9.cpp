@@ -22,31 +22,35 @@ int main()
     vector<Shape *> shapes(6);
 
     // pack that container
-    shapes[0] = new Circle("green circle", 10);
-    shapes[1] = new Cone("yellow cone", 4, 6);
-    shapes[2] = new Cylinder("blue cylinder", 8, 6);
-    shapes[3] = new Cone("purple cone", 9, 7);
-    shapes[4] = new Cylinder("red cylinder", 3, 7);
-    shapes[5] = new Circle("orange circle", 5);
-
+    shapes.push_back(new Circle("green circle", 10));
+    shapes.push_back(new Cone("yellow cone", 4, 6));
+    shapes.push_back(new Cylinder("blue cylinder", 8, 6));
+    shapes.push_back(new Cone("purple cone", 9, 7));
+    shapes.push_back(new Cylinder("red cylinder", 3, 7));
+    shapes.push_back(new Circle("orange circle", 5));
+    
+    // Print all the shapes
     cout << "Printing all shapes..." << endl;
+    int counter = 0
 
     // print those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
     {
         shapes[i]->print();
-
-        cout << "Printing just cylinders " << endl;
-
-        // single out those poor cylinders and print them -- this makes a downcast ptr
-        Cylinder* cylinderPtr = dynamic_cast<Cylinder *>(shapes[i]);
-
-        if(cylinderPtr != nullptr)
-        {
-            cylinderPtr->print();
-        }
-
+        count++;
     }
+    
+    cout << "Printing just cylinders " << endl;
+    for(unsigned i = 0; i < count; j++)
+    {
+    // single out those poor cylinders and print them -- this makes a downcast ptr
+    Cylinder* cylinderPtr = dynamic_cast<Cylinder *>(shapes[count]);
+
+    if(cylinderPtr != nullptr)
+    {
+        cylinderPtr->print();
+    }
+
 
     // delete those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
