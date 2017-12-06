@@ -29,7 +29,7 @@ int Circle::getRadius() const
 // calculates the area and returns it
 double Circle::getArea() const
 {
-   int area = M_PI*(getRadius()*getRadius()); 
+   double area = M_PI*(getRadius()*getRadius()); 
    return area;
 }
 
