@@ -19,13 +19,13 @@ Cylinder::Cylinder(const string& name, int radius, int height) : Circle(name, ra
 
 Cylinder::double getArea() const
 {
-    double area = 2*3.14*radius*height+2*3.14*(radius*radius);
+    double area = 2*3.14*Circle::getRadius()*height+2*3.14*(Circle::getRadius()*Circle::getRadius());
     return area;
 }
 
 double Cylinder::getVolume() const
 {
-    double volume = 3.14*(radius*radius)*height; 
+    double volume = 3.14*(Circle::getRadius()*Circle::getRadius())*height; 
     return volume;
 }
 
