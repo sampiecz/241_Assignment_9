@@ -13,7 +13,7 @@
 using std::cout;
 using std::endl;
 
-Shape::Shape(const string& newName)
+Shape::Shape(const string newName)
 {
     name = newName;
 }
