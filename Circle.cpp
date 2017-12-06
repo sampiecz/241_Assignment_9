@@ -33,5 +33,6 @@ double Circle::getArea() const
 
 void Circle::print() const
 {
-    cout << Shape::print() << ", radius" << radius << ", area " << getArea();
+    Shape::print();
+    cout << ", radius" << radius << ", area " << getArea();
 }

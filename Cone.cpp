@@ -36,5 +36,6 @@ double Cone::getVolume() const
 
 void Cone::print() const 
 {
-    cout << Circle::print() << ", " << height << ", " << getVolume() << endl;
+    Circle::print(); 
+    cout << ", " << height << ", " << getVolume() << endl;
 }

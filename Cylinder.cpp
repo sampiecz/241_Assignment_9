@@ -31,5 +31,6 @@ double Cylinder::getVolume() const
 
 void Cylinder::print() const
 {
-    cout << Circle::print() << ", " << height << ", " << getVolume() << endl;
+    Circle::print();
+    cout << ", " << height << ", " << getVolume() << endl;
 }
