@@ -24,19 +24,19 @@ Cone::Cone(const string newName, int newRadius, int newHeight) : Circle(name, ra
     height = newHeight;
 }
 
-double Cone::getArea() 
+double Cone::getArea() const 
 {
     double area = 3.14*((radius)(radius+sqrt((height*height)+(radius*radius))));
     return area;
 }
 
-double Cone::getVolume() 
+double Cone::getVolume() const 
 {
     double volume = 3.14*(radius*radius)(height/3); 
     return volume;
 }
 
-void Cone::print() 
+void Cone::print() const 
 {
     cout << Circle::print() << ", " << height << ", " << getVolume() << endl;
 }

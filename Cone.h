@@ -18,9 +18,9 @@ class Cone : public Circle
 {
     public:
         Cone(const string, int, int);
-        double getArea();
-        virtual double getVolume();
-        void print();
+        double getArea() const;
+        virtual double getVolume() const;
+        void print() const;
 
     private:
         int height;

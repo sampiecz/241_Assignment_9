@@ -18,9 +18,9 @@ class Circle : public Shape
 {
     public:
         Circle(const string, int);
-        int getRadius();
+        int getRadius() const;
         virtual double getArea() const;
-        void print();
+        void print() const;
 
     private:
         int radius;

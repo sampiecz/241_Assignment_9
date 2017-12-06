@@ -19,19 +19,19 @@ Cylinder::Cylinder(const string newName, int newRadius, int newHeight) : Circle(
     height = newHeight;
 }
 
-Cylinder::double getArea()
+Cylinder::double getArea() const
 {
     double area = 2*3.14*radius*height+2*3.14*(radius*radius);
     return area;
 }
 
-double Cylinder::getVolume()
+double Cylinder::getVolume() const
 {
     double volume = 3.14*(radius*radius)*height; 
     return volume;
 }
 
-void Cylinder::print()
+void Cylinder::print() const
 {
     cout << Circle::print() << ", " << height << ", " << getVolume() << endl;
 }

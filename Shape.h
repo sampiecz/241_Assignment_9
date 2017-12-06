@@ -19,7 +19,7 @@ class Shape
     public:
         Shape(const string);
         virtual ~Shape();
-        virtual void print();
+        virtual void print() const;
         virtual double getArea() const = 0;
 
     private:

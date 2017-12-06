@@ -14,13 +14,13 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Circle::Circle(string newName, int newRadius) : Shape(name)
+Circle::Circle(const string newName, int newRadius) : Shape(name)
 {
     name = newName;
     radius = newRadius;
 }
 
-int Circle::getRadius()
+int Circle::getRadius() const
 {
     return radius;
 }
@@ -31,7 +31,7 @@ double Circle::getArea() const
    return area;
 }
 
-void Circle::print()
+void Circle::print() const
 {
     cout << Shape::print() << ", radius" << radius << ", area " << getArea();
 }
