@@ -7,6 +7,7 @@
 //// PURPOSE:     Store logic for the Cylinder Class. 
 ////********************************************************************
 #include <iostream>
+#include <math.h>
 #include "Cylinder.h"
 
 using std::cout;
@@ -17,15 +18,15 @@ Cylinder::Cylinder(const string& name, int radius, int height) : Circle(name, ra
     this->height = height;
 }
 
-Cylinder::double getArea() const
+double Cylinder::getArea() const
 {
-    double area = 2*3.14*Circle::getRadius()*height+2*3.14*(Circle::getRadius()*Circle::getRadius());
+    double area = 2*M_PI*Circle::getRadius()*height+2*M_PI*(Circle::getRadius()*Circle::getRadius());
     return area;
 }
 
 double Cylinder::getVolume() const
 {
-    double volume = 3.14*(Circle::getRadius()*Circle::getRadius())*height; 
+    double volume = M_PI*(Circle::getRadius()*Circle::getRadius())*height; 
     return volume;
 }
 

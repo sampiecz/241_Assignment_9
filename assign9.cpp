@@ -12,16 +12,36 @@
 #include "Cone.h"
 #include "Circle.h"
 #include "Cylinder.h"
+#include <iostream>
 
-using std::vector;
+using namespace std;
 
 int main()
 {
-    vector<Shape *> shapes(3);
+    vector<Shape *> shapes(6);
 
     shapes[0] = new Circle("green circle", 10);
     shapes[1] = new Cone("yellow cone", 4, 6);
     shapes[2] = new Cylinder("blue cylinder", 8, 6);
+    shapes[3] = new Cone("purple cone", 9, 7);
+    shapes[4] = new Cylinder("red cylinder", 3, 7);
+    shapes[5] = new Circle("orange circle", 5);
+
+    cout << "Printing all shapes..." << endl;
+
+    for(unsigned i = 0; i < shapes.size(); i++)
+    {
+        shapes[i]->print();
+    }
+
+
+
+    cout << "Printing all shapes..." << endl;
+
+    for(unsigned i = 0; i < shapes.size(); i++)
+    {
+        shapes[i]->print();
+    }
 
     return 0;
 }

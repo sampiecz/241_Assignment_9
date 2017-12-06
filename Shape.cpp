@@ -24,5 +24,5 @@ Shape::~Shape()
 
 void Shape::print() const
 {
-    cout << name << endl;
+    cout << name;
 }

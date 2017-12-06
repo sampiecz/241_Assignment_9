@@ -7,15 +7,13 @@
 //// PURPOSE:     Store logic for the Cone Class. 
 ////********************************************************************
 #include <cmath>
+#include <math.h>
 #include <ctgmath>
 #include <iostream>
 #include <string>
 #include "Cone.h"
 
-using std::sqrt;
-using std::cout;
-using std::endl;
-using std::string;
+using namespace std;
 
 Cone::Cone(const string& name, int radius, int height) : Circle(name, radius)
 {
@@ -24,13 +22,13 @@ Cone::Cone(const string& name, int radius, int height) : Circle(name, radius)
 
 double Cone::getArea() const 
 {
-    double area = 3.14*((Circle::getRadius())(Circle::getRadius()+sqrt((height*height)+(Circle::getRadius()*Circle::getRadius()))));
+    double area = (2.0 * M_PI * Circle::getRadius() * Circle::getRadius()) + (2.0 * M_PI * Circle::getRadius() * Circle::getRadius() * height);
     return area;
 }
 
 double Cone::getVolume() const 
-{
-    double volume = 3.14*(Circle::getRadius()*Circle::getRadius())(height/3); 
+{  
+    double volume = (M_PI*Circle::getRadius()*Circle::getRadius()*height)/3; 
     return volume;
 }
 
