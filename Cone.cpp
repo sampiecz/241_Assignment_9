@@ -9,11 +9,13 @@
 #include <cmath>
 #include <ctgmath>
 #include <iostream>
+#include <string>
 #include "Cone.h"
 
 using std::sqrt;
 using std::cout;
 using std::endl;
+using std::string;
 
 Cone::Cone(string newName, int newRadius, int newHeight) : Circle(name, radius)
 {

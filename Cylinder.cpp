@@ -12,10 +12,10 @@
 using std::cout;
 using std::endl;
 
-Cylinder::Cylinder(string newName, int newRadius, int newHeight)
+Cylinder::Cylinder(string newName, int newRadius, int newHeight) : Circle(name, radius)
 {
-    this->name = newName;
-    this->radius = newRadius;
+    name = newName;
+    radius = newRadius;
     height = newHeight;
 }
 
