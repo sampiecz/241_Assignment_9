@@ -30,7 +30,7 @@ double Cone::getArea()
     return area;
 }
 
-virtual double Cone::getVolume() 
+double Cone::getVolume() 
 {
     double volume = 3.14*(radius*radius)(height/3); 
     return volume;

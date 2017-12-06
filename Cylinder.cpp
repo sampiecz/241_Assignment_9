@@ -25,7 +25,7 @@ Cylinder::double getArea()
     return area;
 }
 
-virtual double Cylinder::getVolume()
+double Cylinder::getVolume()
 {
     double volume = 3.14*(radius*radius)*height; 
     return volume;
