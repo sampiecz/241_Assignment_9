@@ -17,9 +17,11 @@ using std::vector;
 
 int main()
 {
-    vector<Shape *> shapes(4);
+    vector<Shape *> shapes(3);
 
     shapes[0] = new Circle("green circle", 10);
+    shapes[1] = new Cone("yellow cone", 4, 6);
+    shapes[2] = new Cylinder("blue cylinder", 8, 6);
 
     return 0;
 }
