@@ -18,8 +18,10 @@ using namespace std;
 
 int main()
 {
+    // container for those shapes
     vector<Shape *> shapes(6);
 
+    // pack that container
     shapes[0] = new Circle("green circle", 10);
     shapes[1] = new Cone("yellow cone", 4, 6);
     shapes[2] = new Cylinder("blue cylinder", 8, 6);
@@ -29,18 +31,26 @@ int main()
 
     cout << "Printing all shapes..." << endl;
 
+    // print those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
     {
         shapes[i]->print();
     }
 
+    cout << "Printing just cylinders " << endl;
 
+    // single out those poor cylinders and print them -- this makes a downcast ptr
+    Cylinder* cylinderPtr = dynamic_cast<Cylinder *>(shapes[i]);
 
-    cout << "Printing all shapes..." << endl;
+    if(cylinderPtr != nullptr)
+    {
+        cylinderPtr->print();
+    }
 
+    // delete those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
     {
-        shapes[i]->print();
+        delete shapes[i]; 
     }
 
     return 0;
