@@ -31,31 +31,28 @@ int main()
     
     // Print all the shapes
     cout << "Printing all shapes..." << endl;
-    int counter = 0
 
     // print those shapes
     for(unsigned i = 0; i < shapes.size(); i++)
     {
         shapes[i]->print();
-        count++;
     }
     
-    cout << "Printing just cylinders " << endl;
-    for(unsigned i = 0; i < count; j++)
+    // Loop through and print only the cylinders
+    for (unsigned j = 0; j < shapes.size(); ++j)
     {
-    // single out those poor cylinders and print them -- this makes a downcast ptr
-    Cylinder* cylinderPtr = dynamic_cast<Cylinder *>(shapes[count]);
-
-    if(cylinderPtr != nullptr)
-    {
-        cylinderPtr->print();
+        Cylinder* cylinderPtr = dynamic_cast<Cylinder*>(shapes[j]);
+        if (cylinderPtr != nullptr)
+        {
+            cylinderPtr->print();
+            cout << endl;
+        }
     }
 
-
     // delete those shapes
-    for(unsigned i = 0; i < shapes.size(); i++)
+    for(unsigned k = 0; k < shapes.size(); k++)
     {
-        delete shapes[i]; 
+        delete shapes[k]; 
     }
 
     return 0;
